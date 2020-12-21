@@ -94,7 +94,9 @@ analyzer.plot_output()
 
 
 ## Reference
-- tBERT: Topic Models and BERT Joining Forces for Semantic Similarity Detection: https://www.aclweb.org/anthology/2020.acl-main.630.pdf
+- [tBERT: Topic Models and BERT Joining Forces for Semantic Similarity Detection](https://www.aclweb.org/anthology/2020.acl-main.630.pdf)
+- Using UMAP for clustering: https://umap-learn.readthedocs.io/en/latest/clustering.html#traditional-clustering
 - https://github.com/dmmiller612/bert-extractive-summarizer
 - https://github.com/MilaNLProc/contextualized-topic-models
 - https://github.com/MaartenGr/BERTopic
+- [Natural Language Processing for Beginners: Using TextBlob](https://www.analyticsvidhya.com/blog/2018/02/natural-language-processing-for-beginners-using-textblob/#:~:text=The%20sentiment%20function%20of%20textblob,properties%2C%20polarity%2C%20and%20subjectivity.&text=Subjective%20sentences%20generally%20refer%20to,of%20%5B0%2C1%5D.)
