@@ -10,12 +10,9 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: module name here
-      url: core.html
-    - output: web,pdf
       title: 'Short-Text-Analyzer '
       url: Short-Text-Analyzer_core.html
     output: web
-    title: short_text_analyzer
+    title: shorttextanalyzer
   output: web
   title: Sidebar

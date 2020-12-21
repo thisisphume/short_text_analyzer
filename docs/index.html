@@ -52,7 +52,7 @@ nb_path: "index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Install all the required packages in requirement file.</p>
+<p>Install all the required packages from the requirement.txt file.</p>
 
 </div>
 </div>
@@ -77,7 +77,7 @@ nb_path: "index.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">shorttextanalyzer.core</span> <span class="kn">import</span> <span class="o">*</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">short_text_analyzer.core</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="n">analyzer</span> <span class="o">=</span> <span class="n">shortTextAnalyzer</span><span class="p">(</span><span class="n">comments_series</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="n">output_result</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">analyze_getResult</span><span class="p">()</span>
@@ -102,7 +102,7 @@ nb_path: "index.ipynb"
 <h2 id="Output:-result">Output: result<a class="anchor-link" href="#Output:-result"> </a></h2><ul>
 <li><code>sentimentScore</code>: Polarity score ranges from [-1,1] where 1 means positive statement and -1 means a negative statement. </li>
 <li><code>Subjective</code>: score ranges from [0,1] where 1 refer to personal opinion, emotion or judgment and 0 means it is factual information. </li>
-<li><a href="/short_text_analyzer/Short-Text-Analyzer_core.html#clusterByKMeans"><code>clusterByKMeans</code></a>: assigned cluster number for each comments using KMeans</li>
+<li><a href="/shorttextanalyzer/Short-Text-Analyzer_core.html#clusterByKMeans"><code>clusterByKMeans</code></a>: assigned cluster number for each comments using KMeans</li>
 <li><code>clusterByHDBSCAN</code>: assigned cluster number for each comments using HDBSCAN</li>
 </ul>
 
@@ -247,10 +247,12 @@ nb_path: "index.ipynb"
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Reference">Reference<a class="anchor-link" href="#Reference"> </a></h2><ul>
-<li>tBERT: Topic Models and BERT Joining Forces for Semantic Similarity Detection: <a href="https://www.aclweb.org/anthology/2020.acl-main.630.pdf">https://www.aclweb.org/anthology/2020.acl-main.630.pdf</a></li>
+<li><a href="https://www.aclweb.org/anthology/2020.acl-main.630.pdf">tBERT: Topic Models and BERT Joining Forces for Semantic Similarity Detection</a></li>
+<li>Using UMAP for clustering: <a href="https://umap-learn.readthedocs.io/en/latest/clustering.html#traditional-clustering">https://umap-learn.readthedocs.io/en/latest/clustering.html#traditional-clustering</a></li>
 <li><a href="https://github.com/dmmiller612/bert-extractive-summarizer">https://github.com/dmmiller612/bert-extractive-summarizer</a></li>
 <li><a href="https://github.com/MilaNLProc/contextualized-topic-models">https://github.com/MilaNLProc/contextualized-topic-models</a></li>
 <li><a href="https://github.com/MaartenGr/BERTopic">https://github.com/MaartenGr/BERTopic</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2018/02/natural-language-processing-for-beginners-using-textblob/#:~:text=The%20sentiment%20function%20of%20textblob,properties%2C%20polarity%2C%20and%20subjectivity.&amp;text=Subjective%20sentences%20generally%20refer%20to,of%20%5B0%2C1%5D.">Natural Language Processing for Beginners: Using TextBlob</a></li>
 </ul>
 
 </div>

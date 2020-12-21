@@ -1,7 +1,6 @@
 {
-  "short_text_analyzer": {
+  "shorttextanalyzer": {
     "Overview": "/",
-    "module name here": "core.html",
     "Short-Text-Analyzer ": "Short-Text-Analyzer_core.html"
   }
 }
