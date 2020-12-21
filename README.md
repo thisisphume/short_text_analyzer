@@ -10,7 +10,7 @@ Documentation Page: https://thisisphume.github.io/short-text-analyzer/
 
 `pip install short-text-analyzer`
 
-Install all the required packages in requirement file.
+Install all the required packages from the requirement.txt file.
 
 `pip install -r requirements.txt`
 
