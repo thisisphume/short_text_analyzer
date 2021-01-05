@@ -1,4 +1,5 @@
 repository: thisisphume/short_text_analyzer
+encoding: UTF-8
 output: web
 topnav_title: short_text_analyzer
 site_title: short_text_analyzer
