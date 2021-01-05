@@ -14,11 +14,13 @@ Install all the required packages from the requirement.txt file.
 
 `pip install -r requirements.txt`
 
+```python
+from shorttextanalyzer.core import *
+```
+
 ## How to use
 
 ```python
-from shorttextanalyzer.core import *
-
 analyzer = shortTextAnalyzer(comments_series, 4)
 output_result = analyzer.analyze_getResult()
 ```
@@ -93,11 +95,11 @@ analyzer.plot_output()
 ```
 
 
-![png](docs/images/output_11_0.png)
+![png](docs/images/output_12_0.png)
 
 
 
-![png](docs/images/output_11_1.png)
+![png](docs/images/output_12_1.png)
 
 
 ## Reference
