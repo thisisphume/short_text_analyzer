@@ -4,6 +4,7 @@ textblob
 sentence_transformers
 umap-learn
 hdbscan
+embedding-tool
 
 ###### Requirements without Version Specifiers
 googletrans==4.0.0-rc1  # pip install googletrans==4.0.0-rc1 --upgrade-strategy only-if-needed

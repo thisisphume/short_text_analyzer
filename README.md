@@ -17,11 +17,18 @@ Install all the required packages from the requirement.txt file.
 ## How to use
 
 ```python
-from short_text_analyzer.core import *
+from shorttextanalyzer.core import *
 
 analyzer = shortTextAnalyzer(comments_series, 4)
 output_result = analyzer.analyze_getResult()
 ```
+
+    
+    Embedding Method for Visualization is  2AE  with MSE of 0.6560611658549391
+    Embedding Method for Clustering is  2AE  with MSE of 0.4782262679093038
+    Number of clusters via HDBSCAN is:  5.0
+    Number of clusters via KMeans is:   4
+    
 
 Here we specify that we want 4 clusters/topic from this data.
 

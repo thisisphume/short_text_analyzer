@@ -148,7 +148,7 @@ Number of text (originally):  863
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="shortTextAnalyzer" class="doc_header"><code>class</code> <code>shortTextAnalyzer</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L17" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>shortTextAnalyzer</code>(<strong><code>comments</code></strong>, <strong><code>num_topics</code></strong>)</p>
+<h2 id="shortTextAnalyzer" class="doc_header"><code>class</code> <code>shortTextAnalyzer</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L18" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>shortTextAnalyzer</code>(<strong><code>comments</code></strong>, <strong><code>num_topics</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -207,7 +207,7 @@ Number of text (originally):  863
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="dataDetectLang" class="doc_header"><code>dataDetectLang</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L154" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>dataDetectLang</code>(<strong><code>text</code></strong>)</p>
+<h4 id="dataDetectLang" class="doc_header"><code>dataDetectLang</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L155" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>dataDetectLang</code>(<strong><code>text</code></strong>)</p>
 </blockquote>
 <p>Determine the language of text.
 : param text: (str) input text</p>
@@ -289,7 +289,7 @@ Number of text (originally):  863
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="dataTranslateToEng" class="doc_header"><code>dataTranslateToEng</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L169" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>dataTranslateToEng</code>(<strong><code>text</code></strong>)</p>
+<h4 id="dataTranslateToEng" class="doc_header"><code>dataTranslateToEng</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L170" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>dataTranslateToEng</code>(<strong><code>text</code></strong>)</p>
 </blockquote>
 <p>Translate the non-English to English.
 **To do: config the connection (error with <code>googletrans</code>) . See <a href="https://github.com/ssut/py-googletrans/issues/234">https://github.com/ssut/py-googletrans/issues/234</a></p>
@@ -354,7 +354,7 @@ Number of text (originally):  863
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="embeddingComments:-mbedding-the-text-via-BERT-and-using-UMAP-for-dimension-reduction:">embeddingComments:<strong> mbedding the text via BERT and using UMAP for dimension reduction:</strong><a class="anchor-link" href="#embeddingComments:-mbedding-the-text-via-BERT-and-using-UMAP-for-dimension-reduction:"> </a></h3><blockquote><p>to transforms text into a numerical representationto (text embedding).</p>
+<h3 id="embeddingComments:-embedding-the-text-via-BERT-and-using-UMAP-for-dimension-reduction">embeddingComments: <strong>embedding the text via BERT and using UMAP for dimension reduction</strong><a class="anchor-link" href="#embeddingComments:-embedding-the-text-via-BERT-and-using-UMAP-for-dimension-reduction"> </a></h3><blockquote><p>to transforms text into a numerical representationto (text embedding).</p>
 </blockquote>
 <p>There are two steps:1. Embedding: using pre-trained BERT model 2. Dimension Reduction: using UMAP to reduce the number of dimensions.</p>
 <p>There are 3 different outputs:</p>
@@ -382,7 +382,7 @@ Number of text (originally):  863
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="embeddingComments" class="doc_header"><code>embeddingComments</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L187" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>embeddingComments</code>(<strong><code>comments</code></strong>)</p>
+<h4 id="embeddingComments" class="doc_header"><code>embeddingComments</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L188" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>embeddingComments</code>(<strong><code>comments</code></strong>)</p>
 </blockquote>
 <p>Getting a vector representation of the comments via BERT
 : return</p>
@@ -606,7 +606,7 @@ Number of text (originally):  863
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="analyzePolarity" class="doc_header"><code>analyzePolarity</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L222" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>analyzePolarity</code>(<strong><code>text</code></strong>)</p>
+<h4 id="analyzePolarity" class="doc_header"><code>analyzePolarity</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L249" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>analyzePolarity</code>(<strong><code>text</code></strong>)</p>
 </blockquote>
 <p>Polarity score ranges from [-1,1] where 1 means positive statement and -1 means a negative statement.</p>
 
@@ -631,7 +631,7 @@ Number of text (originally):  863
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="analyzeSubjectivity" class="doc_header"><code>analyzeSubjectivity</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L230" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>analyzeSubjectivity</code>(<strong><code>text</code></strong>)</p>
+<h4 id="analyzeSubjectivity" class="doc_header"><code>analyzeSubjectivity</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L257" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>analyzeSubjectivity</code>(<strong><code>text</code></strong>)</p>
 </blockquote>
 <p>Subjective score ranges from [0,1] where 1 refer to personal opinion, emotion or judgment and 0 means it is factual information.</p>
 
@@ -690,7 +690,7 @@ Number of text (originally):  863
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="clusterByHBDSCAN" class="doc_header"><code>clusterByHBDSCAN</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L241" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clusterByHBDSCAN</code>(<strong><code>X_vectors</code></strong>)</p>
+<h4 id="clusterByHBDSCAN" class="doc_header"><code>clusterByHBDSCAN</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L268" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clusterByHBDSCAN</code>(<strong><code>X_vectors</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -714,7 +714,7 @@ Number of text (originally):  863
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="clusterByKMeans" class="doc_header"><code>clusterByKMeans</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L271" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clusterByKMeans</code>(<strong><code>X_vectors</code></strong>, <strong><code>n_clusters</code></strong>)</p>
+<h4 id="clusterByKMeans" class="doc_header"><code>clusterByKMeans</code><a href="https://github.com/thisisphume/shorttextanalyzer/tree/master/shorttextanalyzer/core.py#L298" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clusterByKMeans</code>(<strong><code>X_vectors</code></strong>, <strong><code>n_clusters</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -1187,9 +1187,8 @@ Name: clusterByKMeans, dtype: int64</pre>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Converted 00_core.ipynb.
+<pre>Converted 0_Short-Text-Analyzer_core.ipynb.
 Converted index.ipynb.
-Converted Untitled.ipynb.
 </pre>
 </div>
 </div>

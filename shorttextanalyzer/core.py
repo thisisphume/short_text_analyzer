@@ -10,6 +10,7 @@ import pandas as pd
 import re
 import matplotlib.pyplot as plt
 import numpy as np
+from embedding_tool.core import *
 
 logger = logging.getLogger(__name__)
 
@@ -196,6 +197,7 @@ def embeddingComments(comments):
     embeddingRaw = model.encode(comments.tolist(), show_progress_bar=True)
 
 
+    '''
     ### Dimension Reduction with UMAP
     # The embedding out has 768 dimensions. We will use UMAP to reduce the number of dimension.
     # see UMAP's parameter for clustering: https://umap-learn.readthedocs.io/en/latest/clustering.html#traditional-clustering
@@ -213,6 +215,31 @@ def embeddingComments(comments):
     embeddingForCluster = umap.UMAP(n_neighbors=n_neighbors
                                    , n_components=5
                                    , min_dist=min_dist).fit_transform(embeddingRaw)
+
+    '''
+
+    ### Dimension Reduction via PCA or Autoencoder (choose the one with minimum reconstruction error)
+
+    # Embedding for the visualization pupose, i.e. 2-dimensions data
+    dim_reducer = dimensionReducer(embeddingRaw, 2, 0.003)
+    dim_reducer.fit()
+    lowest_mse_method = dim_reducer.rmse_result.T.sort_values('MSE').index[0]
+    lowest_mse_value = dim_reducer.rmse_result.T.sort_values('MSE').head(1).values[0][0]
+
+    print ("Embedding Method for Visualization is ", lowest_mse_method, " with MSE of", lowest_mse_value )
+    if lowest_mse_method == 'PCA'  : embeddingForVisualize = dim_reducer.dfLowDimPCA
+    elif lowest_mse_method == '1AE': embeddingForVisualize = dim_reducer.dfLowDim1AE
+    else: embeddingForVisualize = dim_reducer.dfLowDim2AE
+
+    # For the clustering purpose, we allow a few more dimensions so that it doesn't compress too much (i.e. 5-dimensions is reasonable for HDBSCAN or KNN)
+    dim_reducer = dimensionReducer(embeddingRaw, 5, 0.003)
+    dim_reducer.fit()
+    lowest_mse_method = dim_reducer.rmse_result.T.sort_values('MSE').index[0]
+    lowest_mse_value = dim_reducer.rmse_result.T.sort_values('MSE').head(1).values[0][0]
+    print ("Embedding Method for Clustering is ", lowest_mse_method, " with MSE of", lowest_mse_value )
+    if lowest_mse_method == 'PCA'  : embeddingForCluster = dim_reducer.dfLowDimPCA
+    elif lowest_mse_method == '1AE': embeddingForCluster = dim_reducer.dfLowDim1AE
+    else: embeddingForCluster = dim_reducer.dfLowDim2AE
 
     return embeddingRaw, embeddingForVisualize, embeddingForCluster
 
